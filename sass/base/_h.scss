@@ -57,6 +57,8 @@ blockquote::first-letter {
 }
 
 // Appliquer les couleurs aux éléments HTML
+
+/*
 @include applique-couleur(h1, $color1);
 @include applique-couleur(h2, $color2);
 @include applique-couleur(h3, $color3);
@@ -67,3 +69,4 @@ blockquote::first-letter {
 @include applique-couleur(ul, $color3);
 @include applique-couleur(ol, $color4);
 @include applique-couleur(figure, $color5);
+*/

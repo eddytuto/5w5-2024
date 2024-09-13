@@ -16,19 +16,32 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 /* Variables css                              */
 /* ////////////////////////////////////////// */
-/*
-$color1: #3498db; // Bleu
-$color2: #e74c3c; // Rouge
-$color3: #2ecc71; // Vert
-$color4: #f1c40f; // Jaune
-$color5: #9b59b6; // Violet
-*/
 :root {
-  --color1: #3498db;
-  --color2: #e74c3c;
-  --color3: #2ecc71;
-  --color4: #f1c40f;
-  --color5: #9b59b6;
+  --couleur_1: #aaa;
+  --couleur_2: #f00;
+  --couleur_3: #0f0;
+  --couleur_4: #00f;
+  --couleur_5: rgb(255, 196, 0);
+}
+
+.couleur_1 {
+  color: #aaa;
+}
+
+.couleur_2 {
+  color: #f00;
+}
+
+.couleur_3 {
+  color: #0f0;
+}
+
+.couleur_4 {
+  color: #00f;
+}
+
+.couleur_5 {
+  color: rgb(255, 196, 0);
 }
 
 /* ////////////////////////////////////////// */
@@ -77,46 +90,18 @@ blockquote::first-letter {
   color: var(--_couleur-blockquote-first-letter);
 }
 
-h1 {
-  color: var(--color1);
-}
-
-h2 {
-  color: var(--color2);
-}
-
-h3 {
-  color: var(--color3);
-}
-
-h4 {
-  color: var(--color4);
-}
-
-h5 {
-  color: var(--color5);
-}
-
-h6 {
-  color: var(--color1);
-}
-
-p {
-  color: var(--color2);
-}
-
-ul {
-  color: var(--color3);
-}
-
-ol {
-  color: var(--color4);
-}
-
-figure {
-  color: var(--color5);
-}
-
+/*
+@include applique-couleur(h1, $color1);
+@include applique-couleur(h2, $color2);
+@include applique-couleur(h3, $color3);
+@include applique-couleur(h4, $color4);
+@include applique-couleur(h5, $color5);
+@include applique-couleur(h6, $color1);
+@include applique-couleur(p, $color2);
+@include applique-couleur(ul, $color3);
+@include applique-couleur(ol, $color4);
+@include applique-couleur(figure, $color5);
+*/
 /* ////////////////////////////////////////// */
 /* règles de la pagination                             */
 /* ////////////////////////////////////////// */

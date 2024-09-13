@@ -1,0 +1,38 @@
+/* Styles généraux */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* Section avec l'effet de parallaxe */
+.parallax {
+  /* Taille de la section */
+  height: 500px;
+
+  /* Arrière-plan avec une image (peut être modifiée) */
+  background-image: url('https://via.placeholder.com/1200x800');
+
+  /* Effet de parallaxe */
+  background-attachment: fixed; /* Fixe l'image d'arrière-plan */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Section de contenu */
+.content {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0 0 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin: 20px 0;
+}
