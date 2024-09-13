@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*
+Theme Name: tim-5w5
+Theme URI: https://referenced.ca
+Author: Eddy Martin
+Author URI: https://wordpress.org/
+Description: Thème de base développé dans le cours 5w5
+Version: 1.0
+
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-gr2
+Ce thème a été développé dans le cadre du cours 4W4
+*/
+/* ////////////////////////////////////////// */
+/* Variables css                              */
+/* ////////////////////////////////////////// */
+/*
+$color1: #3498db; // Bleu
+$color2: #e74c3c; // Rouge
+$color3: #2ecc71; // Vert
+$color4: #f1c40f; // Jaune
+$color5: #9b59b6; // Violet
+*/
+:root {
+  --color1: #3498db;
+  --color2: #e74c3c;
+  --color3: #2ecc71;
+  --color4: #f1c40f;
+  --color5: #9b59b6;
+}
+
+/* ////////////////////////////////////////// */
+/* règles de base                             */
+/* ////////////////////////////////////////// */
+/*
+Sélecteur textuel de base
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+
+*/
+h1 {
+  font-size: clamp(1.875rem, -1.25rem + 10vw, 5.625rem);
+  text-shadow: 3px 5px 6px var(--_couleur-ombrage);
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
+h2 {
+  font-size: clamp(1.5625rem, -0.2604rem + 5.8333vw, 3.75rem);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: clamp(1.4375rem, 0.0313rem + 4.5vw, 3.125rem);
+  font-weight: bold;
+}
+
+p {
+  font-size: clamp(1rem, 0.4792rem + 1.6667vw, 1.625rem);
+  line-height: 1.8rem;
+  padding: 2rem 0;
+}
+
+blockquote {
+  padding: 2rem;
+  width: 95%;
+  font-size: clamp(1.25rem, 0.7292rem + 1.6667vw, 1.875rem);
+  font-style: italic;
+}
+
+blockquote::first-letter {
+  font-size: clamp(1.5625rem, -0.2604rem + 5.8333vw, 3.75rem);
+  font-weight: bold;
+  color: var(--_couleur-blockquote-first-letter);
+}
+
+h1 {
+  color: var(--color1);
+}
+
+h2 {
+  color: var(--color2);
+}
+
+h3 {
+  color: var(--color3);
+}
+
+h4 {
+  color: var(--color4);
+}
+
+h5 {
+  color: var(--color5);
+}
+
+h6 {
+  color: var(--color1);
+}
+
+p {
+  color: var(--color2);
+}
+
+ul {
+  color: var(--color3);
+}
+
+ol {
+  color: var(--color4);
+}
+
+figure {
+  color: var(--color5);
+}
+
+/* ////////////////////////////////////////// */
+/* règles de la pagination                             */
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* composants                             */
+/* ////////////////////////////////////////// *//*# sourceMappingURL=style.css.map */

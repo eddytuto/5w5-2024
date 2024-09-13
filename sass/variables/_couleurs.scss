@@ -1,0 +1,27 @@
+/*
+$color1: #3498db; // Bleu
+$color2: #e74c3c; // Rouge
+$color3: #2ecc71; // Vert
+$color4: #f1c40f; // Jaune
+$color5: #9b59b6; // Violet
+*/
+
+:root {
+  --color1: #3498db; // Bleu
+  --color2: #e74c3c; // Rouge
+  --color3: #2ecc71; // Vert
+  --color4: #f1c40f; // Jaune
+  --color5: #9b59b6; // Violet
+}
+
+$color1: --color1;
+$color2: --color2;
+$color3: --color3;
+$color4: --color4;
+$color5: --color5;
+
+@mixin applique-couleur($elements, $color) {
+  #{$elements} {
+    color: var(#{$color});
+  }
+}
