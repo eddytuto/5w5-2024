@@ -7,12 +7,23 @@ $color5: #9b59b6; // Violet
 */
 
 :root {
+  /*
   --color1: #3498db; // Bleu
   --color2: #e74c3c; // Rouge
   --color3: #2ecc71; // Vert
   --color4: #f1c40f; // Jaune
   --color5: #9b59b6; // Violet
+*/
+  --color1: #90adc6;
+  --color2: #e9eaec;
+  --color3: #fad02c;
+  --color4: #333652;
+
+
+
 }
+
+
 
 $color1: --color1;
 $color2: --color2;
@@ -25,3 +36,11 @@ $color5: --color5;
     color: var(#{$color});
   }
 }
+
+@mixin applique-couleur-fond($elements, $color, $back) {
+  #{$elements} {
+    color: var(#{$color});
+    background-color : var(#{$back});
+  }
+}
+

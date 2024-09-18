@@ -1,16 +1,22 @@
-$couleur : #aaa, #f00, #0f0, #00f, rgb(255, 196, 0);
+$couleur : (
+   gris : #aaa, 
+   rouge : #f00, 
+   vert : #0f0, 
+   bleu : #00f, 
+   orange : rgb(255, 196, 0 ));
+
 :root {
 
-@for $i from 1 through length($couleur){
-    --couleur_#{$i} : #{nth($couleur, $i)};
+@each $nom, $valeur in $couleur {
+    --couleur_#{$nom} : #{$valeur};
 }
 
 }
 
 
 
-@for $i from 1 through length($couleur){
-    .couleur_#{$i} {
-        color :  #{nth($couleur, $i)};
-    }
+@each $nom, $valeur in $couleur {
+    .couleur_#{$nom} {
+        color : var(--couleur_#{$nom});
+}
 }

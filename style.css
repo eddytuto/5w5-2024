@@ -16,32 +16,25 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 /* Variables css                              */
 /* ////////////////////////////////////////// */
+/*
+$color1: #3498db; // Bleu
+$color2: #e74c3c; // Rouge
+$color3: #2ecc71; // Vert
+$color4: #f1c40f; // Jaune
+$color5: #9b59b6; // Violet
+*/
 :root {
-  --couleur_1: #aaa;
-  --couleur_2: #f00;
-  --couleur_3: #0f0;
-  --couleur_4: #00f;
-  --couleur_5: rgb(255, 196, 0);
-}
-
-.couleur_1 {
-  color: #aaa;
-}
-
-.couleur_2 {
-  color: #f00;
-}
-
-.couleur_3 {
-  color: #0f0;
-}
-
-.couleur_4 {
-  color: #00f;
-}
-
-.couleur_5 {
-  color: rgb(255, 196, 0);
+  /*
+    --color1: #3498db; // Bleu
+    --color2: #e74c3c; // Rouge
+    --color3: #2ecc71; // Vert
+    --color4: #f1c40f; // Jaune
+    --color5: #9b59b6; // Violet
+  */
+  --color1: #90adc6;
+  --color2: #e9eaec;
+  --color3: #fad02c;
+  --color4: #333652;
 }
 
 /* ////////////////////////////////////////// */
@@ -56,9 +49,9 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 */
 h1 {
   font-size: clamp(1.875rem, -1.25rem + 10vw, 5.625rem);
-  text-shadow: 3px 5px 6px var(--_couleur-ombrage);
+  /* text-shadow: 3px 5px 6px var(--_couleur-ombrage); */
   font-weight: bold;
-  letter-spacing: -3px;
+  /* letter-spacing: -3px; */
 }
 
 h2 {
@@ -69,6 +62,18 @@ h2 {
 h3 {
   font-size: clamp(1.4375rem, 0.0313rem + 4.5vw, 3.125rem);
   font-weight: bold;
+}
+
+h4 {
+  font-size: clamp(1.3rem, 0.0313rem + 4.5vw, 3rem);
+}
+
+h5 {
+  font-size: clamp(1.2rem, 0.0313rem + 4.5vw, 2.8rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 0.0313rem + 4.5vw, 2.5rem);
 }
 
 p {
@@ -90,18 +95,59 @@ blockquote::first-letter {
   color: var(--_couleur-blockquote-first-letter);
 }
 
-/*
-@include applique-couleur(h1, $color1);
-@include applique-couleur(h2, $color2);
-@include applique-couleur(h3, $color3);
-@include applique-couleur(h4, $color4);
-@include applique-couleur(h5, $color5);
-@include applique-couleur(h6, $color1);
-@include applique-couleur(p, $color2);
-@include applique-couleur(ul, $color3);
-@include applique-couleur(ol, $color4);
-@include applique-couleur(figure, $color5);
-*/
+:root {
+  --color1: #90adc6;
+  --color2: #e9eaec;
+  --color3: #fad02c;
+  --color4: #333652;
+}
+
+h1 {
+  color: var(--color1);
+  background-color: var(--color3);
+}
+
+.titre {
+  color: var(--color1);
+  background-color: var(--color4);
+}
+
+h2 {
+  color: var(--color2);
+}
+
+h3 {
+  color: var(--color3);
+}
+
+h4 {
+  color: var(--color4);
+}
+
+h5 {
+  color: var(--color5);
+}
+
+h6 {
+  color: var(--color1);
+}
+
+p {
+  color: var(--color2);
+}
+
+ul {
+  color: var(--color3);
+}
+
+ol {
+  color: var(--color4);
+}
+
+figure {
+  color: var(--color5);
+}
+
 /* ////////////////////////////////////////// */
 /* règles de la pagination                             */
 /* ////////////////////////////////////////// */

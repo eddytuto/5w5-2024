@@ -8,9 +8,9 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 
 h1 {
   font-size: clamp(1.875rem, -1.25rem + 10vw, 5.625rem);
-  text-shadow: 3px 5px 6px var(--_couleur-ombrage);
+  /* text-shadow: 3px 5px 6px var(--_couleur-ombrage); */
   font-weight: bold;
-  letter-spacing: -3px;
+  /* letter-spacing: -3px; */
 }
 
 h2 {
@@ -25,10 +25,13 @@ h3 {
 }
 
 h4 {
+  font-size: clamp(1.3rem, 0.0313rem + 4.5vw, 3rem);
 }
 h5 {
+  font-size: clamp(1.2rem, 0.0313rem + 4.5vw, 2.8rem);
 }
 h6 {
+  font-size: clamp(1rem, 0.0313rem + 4.5vw, 2.5rem);
 }
 
 p {
@@ -58,8 +61,16 @@ blockquote::first-letter {
 
 // Appliquer les couleurs aux éléments HTML
 
-/*
-@include applique-couleur(h1, $color1);
+:root{
+  --color1: #90adc6;
+  --color2: #e9eaec;
+  --color3: #fad02c;
+  --color4: #333652;
+}
+
+
+@include applique-couleur-fond(h1, $color1, $color3);
+@include applique-couleur-fond('.titre', $color1, $color4);
 @include applique-couleur(h2, $color2);
 @include applique-couleur(h3, $color3);
 @include applique-couleur(h4, $color4);
@@ -69,4 +80,3 @@ blockquote::first-letter {
 @include applique-couleur(ul, $color3);
 @include applique-couleur(ol, $color4);
 @include applique-couleur(figure, $color5);
-*/
