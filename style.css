@@ -24,31 +24,19 @@ $color4: #f1c40f; // Jaune
 $color5: #9b59b6; // Violet
 */
 :root {
-  /*
-    --color1: #3498db; // Bleu
-    --color2: #e74c3c; // Rouge
-    --color3: #2ecc71; // Vert
-    --color4: #f1c40f; // Jaune
-    --color5: #9b59b6; // Violet
-  */
   --color1: #90adc6;
   --color2: #e9eaec;
   --color3: #fad02c;
   --color4: #333652;
+}
+
+:root {
   --police_1: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --police_2: Georgia, "Times New Roman", Times, serif;
   --police_3: Verdana, Geneva, Tahoma, sans-serif;
   --police_4: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-/*
-:root {
-    --police_1 : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    --police_2 : Georgia, 'Times New Roman', Times, serif;
-    --police_3 : Verdana, Geneva, Tahoma, sans-serif;
-    --police_4 : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-*/
 /* ////////////////////////////////////////// */
 /* règles de base                             */
 /* ////////////////////////////////////////// */
