@@ -35,8 +35,20 @@ $color5: #9b59b6; // Violet
   --color2: #e9eaec;
   --color3: #fad02c;
   --color4: #333652;
+  --police_1: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --police_2: Georgia, "Times New Roman", Times, serif;
+  --police_3: Verdana, Geneva, Tahoma, sans-serif;
+  --police_4: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+/*
+:root {
+    --police_1 : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --police_2 : Georgia, 'Times New Roman', Times, serif;
+    --police_3 : Verdana, Geneva, Tahoma, sans-serif;
+    --police_4 : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+*/
 /* ////////////////////////////////////////// */
 /* règles de base                             */
 /* ////////////////////////////////////////// */
@@ -47,39 +59,50 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
 
 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: clamp(1.875rem, -1.25rem + 10vw, 5.625rem);
   /* text-shadow: 3px 5px 6px var(--_couleur-ombrage); */
   font-weight: bold;
   /* letter-spacing: -3px; */
+  padding: 3rem;
 }
 
 h2 {
   font-size: clamp(1.5625rem, -0.2604rem + 5.8333vw, 3.75rem);
   font-weight: bold;
+  padding: 2rem;
 }
 
 h3 {
   font-size: clamp(1.4375rem, 0.0313rem + 4.5vw, 3.125rem);
   font-weight: bold;
+  padding: 2rem;
 }
 
 h4 {
   font-size: clamp(1.3rem, 0.0313rem + 4.5vw, 3rem);
+  padding: 2rem;
 }
 
 h5 {
   font-size: clamp(1.2rem, 0.0313rem + 4.5vw, 2.8rem);
+  padding: 2rem;
 }
 
 h6 {
   font-size: clamp(1rem, 0.0313rem + 4.5vw, 2.5rem);
+  padding: 2rem;
 }
 
 p {
   font-size: clamp(1rem, 0.4792rem + 1.6667vw, 1.625rem);
   line-height: 1.8rem;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 blockquote {
@@ -95,11 +118,22 @@ blockquote::first-letter {
   color: var(--_couleur-blockquote-first-letter);
 }
 
+/*
 :root {
   --color1: #90adc6;
   --color2: #e9eaec;
   --color3: #fad02c;
   --color4: #333652;
+}
+  */
+.entete__principal {
+  color: var(--color4);
+  background-color: var(--color3);
+}
+
+.entete__secondaire {
+  color: var(--color1);
+  background-color: var(--color4);
 }
 
 h1 {
@@ -108,7 +142,7 @@ h1 {
 }
 
 .titre {
-  color: var(--color1);
+  color: var(--color2);
   background-color: var(--color4);
 }
 
@@ -146,6 +180,18 @@ ol {
 
 figure {
   color: var(--color5);
+}
+
+h1 {
+  font-family: var(--police_1);
+}
+
+h2 {
+  font-family: var(--police_2);
+}
+
+h3 {
+  font-family: var(--police_3);
 }
 
 /* ////////////////////////////////////////// */

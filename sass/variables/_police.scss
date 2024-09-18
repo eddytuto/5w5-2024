@@ -1,0 +1,19 @@
+
+/*
+:root {
+    --police_1 : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --police_2 : Georgia, 'Times New Roman', Times, serif;
+    --police_3 : Verdana, Geneva, Tahoma, sans-serif;
+    --police_4 : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+*/
+$police_1 : --police_1;
+$police_2 : --police_2; 
+$police_3 : --police_3;
+$police_4 : --police_4;
+
+@mixin police($elements, $police) {
+  #{$elements} {
+    font-family: var(#{$police});
+  }
+}
