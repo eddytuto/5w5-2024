@@ -1,0 +1,11 @@
+.navigation {
+    text-align: right;
+    PADDING : 10PX;
+
+    &__a {
+        display : inline-block;
+        padding : 5px;
+        font-size: 1.5rem;
+    }
+}
+

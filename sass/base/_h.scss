@@ -78,19 +78,19 @@ blockquote::first-letter {
 }
   */
 
-@include applique-couleur-fond('.entete__principal', $color4, $color3);
-@include applique-couleur-fond('.entete__secondaire', $color1, $color4);
-@include applique-couleur-fond(h1, $color1, $color3);
-@include applique-couleur-fond('.titre', $color2, $color4);
-@include applique-couleur(h2, $color2);
-@include applique-couleur(h3, $color3);
-@include applique-couleur(h4, $color4);
-@include applique-couleur(h5, $color5);
-@include applique-couleur(h6, $color1);
-@include applique-couleur(p, $color2);
-@include applique-couleur(ul, $color3);
-@include applique-couleur(ol, $color4);
-@include applique-couleur(figure, $color5);
+@include applique-couleur-fond('.entete__principal', $couleur4, $couleur3);
+@include applique-couleur-fond('.entete__secondaire', $couleur1, $couleur4);
+@include applique-couleur-fond(h1, $couleur1, $couleur3);
+@include applique-couleur-fond('.titre', $couleur2, $couleur4);
+@include applique-couleur(h2, $couleur2);
+@include applique-couleur(h3, $couleur3);
+@include applique-couleur(h4, $couleur4);
+@include applique-couleur(h5, $couleur5);
+@include applique-couleur(h6, $couleur1);
+@include applique-couleur(p, $couleur2);
+@include applique-couleur(ul, $couleur3);
+@include applique-couleur(ol, $couleur4);
+@include applique-couleur(figure, $couleur5);
 
 
 @include police(h1, $police_1);

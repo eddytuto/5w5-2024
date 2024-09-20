@@ -32,7 +32,7 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 /* règles de la pagination                             */
 /* ////////////////////////////////////////// */
-//@import "layout";
+@import "layout";
 
 //@import "effet/vague";
 
@@ -44,5 +44,5 @@ Ce thème a été développé dans le cadre du cours 4W4
 /* ////////////////////////////////////////// */
 /* composants                             */
 /* ////////////////////////////////////////// */
-//@import "composant/sociaux";
+@import "composantS/navigation";
 //@import "composant/recherche";

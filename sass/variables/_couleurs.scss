@@ -7,32 +7,27 @@ $color5: #9b59b6; // Violet
 */
 
 :root {
-
-  --color1: #90adc6;
-  --color2: #e9eaec;
-  --color3: #fad02c;
-  --color4: #333652;
-
+  --couleur1: #90adc6;
+  --couleur2: #e9eaec;
+  --couleur3: #fad02c;
+  --couleur4: #333652;
 }
 
+$couleur1: --couleur1;
+$couleur2: --couleur2;
+$couleur3: --couleur3;
+$couleur4: --couleur4;
+$couleur5: --couleur5;
 
-
-$color1: --color1;
-$color2: --color2;
-$color3: --color3;
-$color4: --color4;
-$color5: --color5;
-
-@mixin applique-couleur($elements, $color) {
+@mixin applique-couleur($elements, $couleur) {
   #{$elements} {
-    color: var(#{$color});
+    color: var(#{$couleur});
   }
 }
 
-@mixin applique-couleur-fond($elements, $color, $back) {
+@mixin applique-couleur-fond($elements, $couleur, $back) {
   #{$elements} {
-    color: var(#{$color});
-    background-color : var(#{$back});
+    color: var(#{$couleur});
+    background-color: var(#{$back});
   }
 }
-
