@@ -1,11 +1,15 @@
 .navigation {
-    text-align: right;
-    PADDING : 10PX;
+  text-align: right;
+  padding: 10px;
 
-    &__a {
-        display : inline-block;
-        padding : 5px;
-        font-size: 1.5rem;
-    }
+  &__a {
+    display: inline-block;
+    padding: 5px;
+    font-size: clamp(0.5rem, 0.143rem + 0.952vw, 1rem);
+    text-decoration: none;
+    font-family: var(#{$police_4});
+    font-weight: bold;
+  }
 }
 
+@include applique-couleur-menu(".navigation__a", $couleur1, $couleur4);

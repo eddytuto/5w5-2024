@@ -49,6 +49,10 @@ p {
   padding: 2rem;
 }
 
+a{
+  
+}
+
 hr {
 }
 
@@ -77,6 +81,8 @@ blockquote::first-letter {
   --color4: #333652;
 }
   */
+
+
 
 @include applique-couleur-fond('.entete__principal', $couleur4, $couleur3);
 @include applique-couleur-fond('.entete__secondaire', $couleur1, $couleur4);

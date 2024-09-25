@@ -23,6 +23,7 @@ $color3: #2ecc71; // Vert
 $color4: #f1c40f; // Jaune
 $color5: #9b59b6; // Violet
 */
+/* Les variables css définie dans :root sont connue partout */
 :root {
   --couleur1: #90adc6;
   --couleur2: #e9eaec;
@@ -194,7 +195,7 @@ section, .entete {
 }
 
 #accueil {
-  background-color: hsla(180, 50%, 50%, 0.5);
+  background-color: var(--couleur2);
 }
 
 #un {
@@ -218,7 +219,7 @@ section, .entete {
 }
 
 /* ////////////////////////////////////////// */
-/* composants                                 */
+/* composants                             */
 /* ////////////////////////////////////////// */
 .navigation {
   text-align: right;
@@ -227,7 +228,18 @@ section, .entete {
 .navigation__a {
   display: inline-block;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: clamp(0.5rem, 0.143rem + 0.952vw, 1rem);
   text-decoration: none;
-  
+  font-family: var(--police_4);
+  font-weight: bold;
+}
+
+.navigation__a {
+  color: var(--couleur1);
+  background-color: var(--couleur4);
+}
+
+.navigation__a:hover {
+  color: var(--couleur4);
+  background-color: var(--couleur1);
 }/*# sourceMappingURL=style.css.map */

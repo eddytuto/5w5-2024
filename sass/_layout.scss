@@ -6,7 +6,7 @@ section, .entete {
   min-height: 100vh;
 }
 #accueil {
-  background-color: hsl(180, 50%, 50%, 0.5);
+  background-color: var(#{$couleur2});
   //background-color: #c9d5e0;
 }
 #un {

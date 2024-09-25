@@ -5,7 +5,7 @@ $color3: #2ecc71; // Vert
 $color4: #f1c40f; // Jaune
 $color5: #9b59b6; // Violet
 */
-
+/* Les variables css définie dans :root sont connue partout */
 :root {
   --couleur1: #90adc6;
   --couleur2: #e9eaec;
@@ -19,15 +19,27 @@ $couleur3: --couleur3;
 $couleur4: --couleur4;
 $couleur5: --couleur5;
 
-@mixin applique-couleur($elements, $couleur) {
-  #{$elements} {
+@mixin applique-couleur($selecteur, $couleur) {
+  #{$selecteur} {
     color: var(#{$couleur});
   }
 }
 
-@mixin applique-couleur-fond($elements, $couleur, $back) {
-  #{$elements} {
+@mixin applique-couleur-fond($selecteur, $couleur, $back) {
+  #{$selecteur} {
     color: var(#{$couleur});
     background-color: var(#{$back});
+  }
+}
+
+@mixin applique-couleur-menu($selecteur, $couleur, $back) {
+  #{$selecteur} {
+    color: var(#{$couleur});
+    background-color: var(#{$back});
+  }
+
+  #{$selecteur}:hover {
+    color: var(#{$back});
+    background-color: var(#{$couleur});
   }
 }
