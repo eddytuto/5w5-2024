@@ -6,13 +6,23 @@ $color4: #f1c40f; // Jaune
 $color5: #9b59b6; // Violet
 */
 /* Les variables css définie dans :root sont connue partout */
+/*
 :root {
   --couleur1: #90adc6;
   --couleur2: #e9eaec;
   --couleur3: #fad02c;
   --couleur4: #333652;
+  --couleur5: #f7f6d9;
 }
 
+:root {
+  --couleur6: rgb(8, 61, 119);
+  --couleur7: rgb(235, 235, 211);
+  --couleur8: rgb(218, 65, 103);
+  --couleur9: rgb(244, 211, 94);
+  --couleur10: rgb(247, 135, 100);
+}
+*/
 $couleur1: --couleur1;
 $couleur2: --couleur2;
 $couleur3: --couleur3;
