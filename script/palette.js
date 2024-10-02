@@ -11,6 +11,8 @@
     "rgb(247, 135, 100)",
   ];
 
+  paletteCouleur[2] = ["#90adc6", "#e9e5b1", "#7acc2e", "#05273d", "#dbb9e9"];
+
   // Accéder à l'élément :root
   let root = document.documentElement;
 
@@ -21,25 +23,27 @@
       root.style.setProperty("--couleur" + (i + 1), paletteCouleur[numero][i]);
     }
   }
+
+  /* --------------------------------------------------- */
+  var numero = 0;
   for (var k = 0; k < paletteCouleur.length; k++) {
     var palette__label = document.createElement("label");
     palette.appendChild(palette__label);
     palette__label.classList.add("palette__label");
+    palette__label.id = "palette_" + k;
     for (var i = 0; i < paletteCouleur[k].length; i++) {
       var color = document.createElement("div");
       color.classList.add("palette__label__div");
       color.style.backgroundColor = paletteCouleur[k][i];
-      /*
-      color.onclick = function () {
-        var color = this.style.backgroundColor;
-        var canvas = document.getElementById("canvas");
-        var context = canvas.getContext("2d");
-        context.fillStyle = color;
-        context.strokeStyle = color;
-      };
-*/
       palette__label.appendChild(color);
+
+      color.addEventListener("click", function (e) {
+        var id = e.target.parentElement.id;
+        var numero = parseInt(id.substr(id.length - 1));
+        choixPalette(numero);
+      });
     }
+
+    choixPalette(0);
   }
-  choixPalette(0);
 })();

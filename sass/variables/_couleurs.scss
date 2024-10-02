@@ -1,12 +1,12 @@
-/*
-$color1: #3498db; // Bleu
-$color2: #e74c3c; // Rouge
-$color3: #2ecc71; // Vert
-$color4: #f1c40f; // Jaune
-$color5: #9b59b6; // Violet
-*/
+
+$color1: #0c3047; // Bleu
+$color2: #e9e5b1; // Rouge
+$color3: #7acc2e; // Vert
+$color4: #05273d; // Jaune
+$color5: #dbb9e9; // Violet
+
 /* Les variables css définie dans :root sont connue partout */
-/*
+
 :root {
   --couleur1: #90adc6;
   --couleur2: #e9eaec;
@@ -14,7 +14,7 @@ $color5: #9b59b6; // Violet
   --couleur4: #333652;
   --couleur5: #f7f6d9;
 }
-
+*/
 :root {
   --couleur6: rgb(8, 61, 119);
   --couleur7: rgb(235, 235, 211);
@@ -22,7 +22,7 @@ $color5: #9b59b6; // Violet
   --couleur9: rgb(244, 211, 94);
   --couleur10: rgb(247, 135, 100);
 }
-*/
+
 $couleur1: --couleur1;
 $couleur2: --couleur2;
 $couleur3: --couleur3;
